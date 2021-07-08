@@ -1,0 +1,32 @@
+Algoritmo "Cadastro-Empresa-Ozzy"
+
+Var
+       renda,f1, f2:real
+       
+
+Inicio
+        escreval("====================LOJAS OZZY==============================")
+        escreval("------------------------------------------------------------")
+        escreval("------------------CADASTRO DE CLIENTE-----------------------")
+        escreval("------------------------------------------------------------")
+        escreval("------------------------------------------------------------")
+        escreva("Digite a renda do cliente: R$")
+        leia (renda)
+        escreval("Renda do cliente: R$ ",renda:4:2)
+        
+        f1<-renda*(30/100)
+        f2<-renda*(35/100)
+
+        se(renda<1000)entao
+        escreva("Valor não atinge ao mínimo exigido.")
+        fimse
+
+        se(renda>=1000) e (renda<=2999.99)entao
+        escreva("O cliente está na faixa 1 e pode comprar até R$ ", f1:4:2)
+        fimse
+
+        se(renda>=3000) e (renda <=4999.99)entao
+        escreval("O cliente está na faixa 2 e pode comprar até R$",f2:4:2)
+        fimse
+
+Fimalgoritmo
